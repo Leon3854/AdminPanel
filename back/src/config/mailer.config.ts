@@ -2,7 +2,7 @@ import { MailerOptions } from '@nestjs-modules/mailer';
 import { ConfigService } from '@nestjs/config';
 import { isDev } from '../utils/is-dev.utils';
 
-const getMailerConfig = async (
+export const getMailerConfig = async (
   configService: ConfigService,
 ): Promise<MailerOptions> => ({
   transport: {
